@@ -7,10 +7,12 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     GameObject GameManager;
-
+    AudioSource ballAudio;
     // Start is called before the first frame update
     void Start()
     {
+        ballAudio = GetComponent<AudioSource>();
+
         if (GameObject.FindGameObjectWithTag("GameManager") != null)
         {
             GameManager = GameObject.FindGameObjectWithTag("GameManager");
@@ -30,5 +32,10 @@ public class BallController : MonoBehaviour
             GameManager.GetComponent<GameManager>().LeftScored();
             Destroy(gameObject);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        ballAudio.Play();
     }
 }
