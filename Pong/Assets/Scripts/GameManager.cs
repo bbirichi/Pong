@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseOverlay;
     [SerializeField] private GameObject winOverlay;
 
+    [SerializeField] private GameObject particleEffect;
+
     bool isPaused = false;
 
     private void Start()
@@ -68,10 +70,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void RightScored()
+    public void RightScored(Vector3 position)
     {
         rightScore++;
         rightScoreText.text = rightScore.ToString();
+        Instantiate(particleEffect, position, Quaternion.identity);
         if (rightScore >= 10)
         {
             winText.text = "You Lose";
@@ -83,10 +86,11 @@ public class GameManager : MonoBehaviour
         }        
     }
 
-    public void LeftScored()
+    public void LeftScored(Vector3 position)
     {        
         leftScore++;
         leftScoreText.text = leftScore.ToString();
+        Instantiate(particleEffect, position, Quaternion.identity);
         if (leftScore >= 10)
         {
             winText.text = "You Win!";

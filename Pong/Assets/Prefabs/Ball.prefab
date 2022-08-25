@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9fa312935f21894c8356335cc6302f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballSpeed: 30
 --- !u!82 &2583901091321288245
 AudioSource:
   m_ObjectHideFlags: 0

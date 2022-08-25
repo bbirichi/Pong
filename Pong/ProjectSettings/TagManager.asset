@@ -8,6 +8,8 @@ TagManager:
   - RightGoal
   - GameManager
   - Ball
+  - RightRacket
+  - LeftRacket
   layers:
   - Default
   - TransparentFX

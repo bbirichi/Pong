@@ -633,7 +633,7 @@ GameObject:
   - component: {fileID: 301788841}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: LeftRacket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2631,6 +2631,7 @@ MonoBehaviour:
   winText: {fileID: 1312044165}
   pauseOverlay: {fileID: 1867723989}
   winOverlay: {fileID: 986471959}
+  particleEffect: {fileID: 605090972797911335, guid: 7072c95f3cd1f6b4f82a3cf409bc8dc3, type: 3}
 --- !u!4 &998249776
 Transform:
   m_ObjectHideFlags: 0
@@ -3902,7 +3903,7 @@ GameObject:
   - component: {fileID: 1712964261}
   m_Layer: 0
   m_Name: AI
-  m_TagString: Untagged
+  m_TagString: RightRacket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3961,7 +3962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7fa50aa223462b48950b26e667da1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 8
 --- !u!1 &1735308936
 GameObject:
   m_ObjectHideFlags: 0
